@@ -1,0 +1,226 @@
+@import '~antd/lib/style/themes/default.less';
+
+.buttonColor {
+  background-color: #1890FF;
+  border-color: #1890FF;
+}
+
+.buttonColor:hover, .buttonColor:focus {
+  background-color: #1890FF;
+  border-color: #1890FF;
+}
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        width: auto;
+        line-height: 32px;
+        padding-right: 8px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+
+.buttonList {
+  margin-bottom: 20px;
+  button {
+    margin-right: 20px;
+  }
+}
+
+.auditButtonList {
+  margin-bottom: 20px;
+  text-align: center;
+  button {
+    margin-right: 20px;
+  }
+}
+
+.radioStyle {
+  margin-left: 40px;
+}
+
+.auditForm {
+   :global {
+     .ant-form-item {
+       margin-bottom: 5px;
+       > .ant-form-item-label {
+         height: 50px;
+         width: 20%;
+       }
+       > .ant-form-item-control-wrapper {
+         height: 50px;
+       }
+     }
+   }
+ }
+
+.incomeTable {
+  tr {
+    th {
+      white-space: nowrap;
+      text-align: center;
+      font-weight: bold;
+    }
+    td {
+      white-space: nowrap;
+      text-align: center;
+    }
+  }
+}
+
+.selectedColor {
+  background-color: #D9E381;
+}
+
+.buttonFlex {
+  margin-left: 4px;
+  margin-top: 5px;
+}
+
+.reductionTableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        width: 110px;
+        line-height: 32px;
+        padding-right: 8px;
+      }
+      .ant-form-item-control {
+        width: 80%;
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+
+.showPicture {
+  :global {
+    .ant-upload-list-item-info {
+      span {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .ant-upload-list-item-actions{
+      .anticon-delete{
+        display: none;
+      }
+    }
+  }
+}
+
+.textArea {
+  span {
+    margin-right: 5px;
+  }
+  textarea {
+    width: 350px;
+  }
+}
+
+
+.normalTag {
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+}
+
+.defaultTag {
+  border-color: #797979;
+  color: #797979;
+}
+
+.selectedTag {
+  //background-color: #81D8D0;
+  //border-color: #81D8D0;
+  color: white;
+}
+
+.selectedCell {
+  background-color: #d9d9d9;
+}
+
+.globalTable {
+  :global {
+    .ant-table-tbody > tr > td {
+      padding: 0;
+    }
+  }
+}
+
+.globalTag {
+  :global {
+    .ant-tag {
+      margin: 0;
+    }
+  }
+}
+
+.resTable {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+  position: relative;
+  :global {
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      white-space: nowrap;
+      text-align: center;
+    }
+    .ant-table-wrapper {
+      table {
+        table-layout: fixed;
+        td {
+          white-space: nowrap;
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        td > div {
+          line-height: 100%;
+        }
+      }
+    }
+  }
+}
+

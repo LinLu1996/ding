@@ -1,0 +1,37 @@
+.normalTag {
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+}
+
+.defaultTag {
+  border-color: #797979;
+  color: #797979;
+}
+
+.selectedTag {
+  //background-color: #81D8D0;
+  //border-color: #81D8D0;
+  color: white;
+}
+
+.selectedCell {
+  background-color: #d9d9d9;
+}
+
+.globalTable {
+  :global {
+    .ant-table-tbody > tr > td {
+      padding: 0;
+    }
+  }
+}
+
+.globalTag {
+  :global {
+    .ant-tag {
+      margin: 0;
+    }
+  }
+}

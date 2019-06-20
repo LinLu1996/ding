@@ -1,0 +1,155 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+.selectedColor {
+  background-color: #1890FF;
+}
+.resTable {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-y: hidden;
+  position: relative;
+  :global {
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      white-space: nowrap;
+      text-align: center;
+    }
+    .ant-table-wrapper {
+      table {
+        table-layout: fixed;
+        td {
+          white-space: nowrap;
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        td > div {
+          line-height: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        line-height: 32px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+
+.permissionTableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        width: auto;
+        line-height: 32px;
+      }
+      //.ant-form-item-control {
+      //  width: 80%;
+      //  line-height: 32px;
+      //}
+    }
+  }
+  .submitButtons {
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+
+.buttonColor {
+  background-color: #1890FF;
+  border-color: #1890FF;
+}
+
+.sportList{
+  border: 1px solid #ccc;
+  position: relative;
+  height: 300px;
+  padding: 40px;
+}
+.listTitle{
+  border: 1px solid #000;
+  border-radius: 10%;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+.buttonColor:hover,
+.buttonColor:focus {
+  background-color: #1890FF;
+  border-color: #1890FF;
+}
+:global {
+  .ant-btn-primary {
+    background-color: #1890FF;
+    border-color: #1890FF;
+
+  }
+  .ant-btn {
+    background-color: #1890FF;
+    border-color: #1890FF;
+    color: #fff;
+  }
+  .ant-btn-primary:hover,.ant-btn:hover,.ant-btn:focus,
+  .ant-btn-primary:focus {
+    background-color: #1890FF;
+    border-color: #1890FF;
+    color:#fff;
+  }
+}
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+

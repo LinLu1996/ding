@@ -1,0 +1,84 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+.selectedColor {
+  background-color: #1890FF;
+}
+.reductionTableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        width: 110px;
+        line-height: 32px;
+      }
+      > .ant-form-item-control-wrapper {
+        width: calc(100% - 110px);
+      }
+      .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+        margin-left: 0;
+      }
+      //.ant-form-item-control {
+      //  width: 80%;
+      //  line-height: 32px;
+      //}
+    }
+  }
+  .submitButtons {
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+
+.buttonColor {
+  background-color: #1890FF;
+  border-color: #1890FF;
+}
+
+.buttonColor:hover,
+.buttonColor:focus {
+  background-color: #1890FF;
+  border-color: #1890FF;
+}
+:global {
+  .ant-btn-primary {
+    background-color: #1890FF;
+    border-color: #1890FF;
+
+  }
+  .ant-btn {
+    background-color: #1890FF;
+    border-color: #1890FF;
+    color: #fff;
+  }
+  .ant-btn-primary:hover,.ant-btn:hover,.ant-btn:focus,
+  .ant-btn-primary:focus {
+    background-color: #1890FF;
+    border-color: #1890FF;
+    color:#fff;
+  }
+}
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}
+
+
